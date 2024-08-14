@@ -13,7 +13,7 @@
   
 ### 1.11.0
 
-  * Feature: Add "Save all" button to Better Open Editors panel (fixes #19)
+  * Feature: Add "Save all" button to Slim Open Editors panel (fixes #19)
   * Fix: The settings link does now use the official string (fixes #2)
 
 ### 1.10.2
@@ -103,7 +103,7 @@
  
  ### 1.0.3
 
- * Fix: Settings icon is now only displayed on the Better Open Editors panel.
+ * Fix: Settings icon is now only displayed on the Slim Open Editors panel.
  * Fix: Gitlens and standard file diffs are now displayed.
  * Fix: New files support improved.
  * Fix: File/folder sorting improved.

@@ -8,7 +8,7 @@ function activate(context) {
 	const quickPick = new QuickPick(context, treeviewPanel);
 
 	vscode.commands.registerCommand('betterOpenEditors.openExtensionSettings', () => {
-		vscode.commands.executeCommand('workbench.action.openSettings', '@ext:McSodbrenner.better-open-editors');
+		vscode.commands.executeCommand('workbench.action.openSettings', '@ext:joelhy.slim-open-editors');
 	});
 
 	vscode.commands.registerCommand('betterOpenEditors.saveAll', () => {

@@ -120,8 +120,10 @@ module.exports = class File extends Base {
 
 		if (config.get('HideFilePath')) {
 			const parts = this.label.split($path.sep);
-			if (parts.length > 1) {
-				this.label = parts.pop();
+			if (parts.length > 3) {
+				this.label = parts.slice(-3).join($path.sep);
+			} else {
+				this.label = parts.join($path.sep);
 			}
 		}
 

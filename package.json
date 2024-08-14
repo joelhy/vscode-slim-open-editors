@@ -1,6 +1,6 @@
 {
-  "name": "better-open-editors",
-  "displayName": "Better Open Editors",
+  "name": "slim-open-editors",
+  "displayName": "Slim Open Editors",
   "description": "Groups open editors by package folders.",
   "keywords": [
     "editors",
@@ -13,11 +13,11 @@
   "preview": false,
   "license": "MIT",
   "icon": "meta/icon.png",
-  "repository": "https://github.com/McSodbrenner/vscode-better-open-editors",
+  "repository": "https://github.com/joelhy/vscode-slim-open-editors",
   "engines": {
     "vscode": "^1.69.0"
   },
-  "publisher": "McSodbrenner",
+  "publisher": "joelhy",
   "categories": [
     "Other"
   ],
@@ -34,7 +34,7 @@
       }
     ],
     "configuration": {
-      "title": "Better Open Editors",
+      "title": "Slim Open Editors",
       "properties": {
         "betterOpenEditors.InsertSpaceForLastSlug": {
           "order": 1,
@@ -97,7 +97,7 @@
       "explorer": [
         {
           "id": "betterOpenEditors",
-          "name": "Better Open Editors"
+          "name": "Slim Open Editors"
         }
       ]
     },

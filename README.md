@@ -1,4 +1,4 @@
-# Better Open Editors
+# Slim Open Editors
 
 This is a replacement for the Open Editors panel, which becomes very cluttered with many open files. Especially in projects with package folders (e.g. in monorepos) you often have many files with the same name open and have difficulties to distinguish them.
 
