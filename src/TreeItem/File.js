@@ -103,7 +103,7 @@ module.exports = class File extends Base {
 		if (this.isPinned && tab.isDirty) {
 			this.iconPath = new vscode.ThemeIcon('pinned-dirty');
 		}
-	
+
 		this.label = this.internalLabel;
 
 		if (config.get('InsertSpacesAroundSlashes')) {
@@ -120,10 +120,12 @@ module.exports = class File extends Base {
 
 		if (config.get('HideFilePath')) {
 			const parts = this.label.split($path.sep);
-			if (parts.length > 3) {
-				this.label = parts.slice(-3).join($path.sep);
-			} else {
-				this.label = parts.join($path.sep);
+			if (parts.length > 1) {
+				if (this.label.length >= 32) {
+					// Reserve last 3 parts of file path
+					this.label = '...' + $path.sep + parts.slice(-3).join($path.sep);
+				}
+				// If label length is less than 32, keep the full file path
 			}
 		}
 
